@@ -1,7 +1,760 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="icon" href="data:,">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f3ed">
+  <title>Amirhossein Moloudi | IT Solutions Architect & Technical Lead | امیرحسین مولودی</title>
+  <meta name="description" content="Amirhossein (Amir Hossein) Moloudi — امیرحسین مولودی. IT Solutions Architect, Technical Lead, and former ESL instructor. Architecture, engineering, and mentorship.">
+  <meta name="author" content="Amirhossein Moloudi">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <!-- Deployment: this is the website listed on the public code profile.
+       If hosting elsewhere, replace https://amirhosseinmoloudi.ir/ in this file and sitemap.xml.
+       No canonical or image URL is inferred at runtime. Profile snapshot: 2026-10-17. -->
+  <link rel="canonical" href="https://amirhosseinmoloudi.ir/">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://amirhosseinmoloudi.ir/">
+  <meta property="og:site_name" content="Amirhossein Moloudi">
+  <meta property="og:title" content="Amirhossein Moloudi — Architecture. Engineering. Mentorship.">
+  <meta property="og:description" content="IT Solutions Architect & Technical Lead. Building dependable software with a human perspective. Amir Hossein Moloudi · امیرحسین مولودی">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fa_IR">
+  <meta property="profile:first_name" content="Amirhossein">
+  <meta property="profile:last_name" content="Moloudi">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Amirhossein Moloudi | IT Solutions Architect & Technical Lead">
+  <meta name="twitter:description" content="Architecture, engineering, and mentorship. Amir Hossein Moloudi · امیرحسین مولودی">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://amirhosseinmoloudi.ir/#profile",
+    "url": "https://amirhosseinmoloudi.ir/",
+    "name": "Amirhossein Moloudi — IT Solutions Architect & Technical Lead",
+    "dateModified": "2026-10-17T00:00:00+03:30",
+    "inLanguage": ["en", "fa"],
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://amirhosseinmoloudi.ir/#person",
+      "name": "Amirhossein Moloudi",
+      "givenName": "Amirhossein",
+      "familyName": "Moloudi",
+      "alternateName": ["Amir Hossein Moloudi", "Amirhossein (Amir Hossein) Moloudi", "امیرحسین مولودی", "امیر حسین مولودی"],
+      "url": "https://amirhosseinmoloudi.ir/",
+      "description": "IT Solutions Architect and Technical Lead at Mammute, working with cloud-native, microservices, event-driven, serverless, and distributed systems. Former English as a Second Language instructor.",
+      "jobTitle": "IT Solutions Architect / Technical Lead",
+      "worksFor": {"@type": "Organization", "name": "Mammute", "url": "https://honarekhalagh.com/"},
+      "homeLocation": {"@type": "Place", "name": "Mashhad County, Razavi Khorasan, Iran"},
+      "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Azad University (IAU)"}, {"@type": "HighSchool", "name": "Dr. Moein High School"}],
+      "knowsLanguage": ["English", "Persian"],
+      "knowsAbout": ["Software Solution Architecture", "Distributed Systems", "Microservices", "Information System Design", "Cloud-Native Architecture", "Event-Driven Architecture", "Serverless", "Rust", "Actix", "Java", "Spring", "API-First Development", "DevOps", "Agile", "Mentoring", "Legacy Modernization", "Greenfield Development", "Technical Debt"],
+      "sameAs": ["https://www.linkedin.com/in/amoloudi/", "https://github.com/AmirHosseinMoloudi"]
+    }
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f5f3ed; --surface: #ebe9e1; --ink: #203b34; --body: #3c4842;
+      --muted: #62685f; --line: #cccfc3; --accent: #955136; --accent-soft: #e9d9cb;
+      --inverse: #f6f2e8; --deep: #203b34; --deep-muted: #c5d0c5; --deep-line: #52645a;
+      --focus: #955136; --max: 1200px; --gutter: clamp(20px, 5.8vw, 88px);
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+      --radius: 3px;
+    }
+    [data-theme="dark"] {
+      color-scheme: dark;
+      --paper: #142720; --surface: #1d342c; --ink: #f0ede3; --body: #d3d9cf;
+      --muted: #b2beb0; --line: #40554a; --accent: #e5b291; --accent-soft: #453c2f;
+      --focus: #e5b291;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 105px; }
+    body { margin: 0; background: var(--paper); color: var(--body); font: 16px/1.7 var(--sans); -webkit-font-smoothing: antialiased; }
+    body, button, input { font-family: var(--sans); }
+    [hidden] { display: none !important; }
+    ::selection { background: var(--accent-soft); color: var(--ink); }
+    a { color: inherit; text-underline-offset: .24em; }
+    button, summary, a { -webkit-tap-highlight-color: transparent; }
+    a, button, summary { touch-action: manipulation; }
+    a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--focus); outline-offset: 5px; }
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    svg { display: block; width: 20px; height: 20px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    h1, h2, h3, h4, p, figure, blockquote { margin: 0; }
+    h1, h2, h3, h4 { color: var(--ink); }
+    h1, h2, .display { font-family: var(--serif); font-weight: 400; }
+    h2 { font-size: clamp(35px, 4.5vw, 58px); line-height: 1.09; letter-spacing: -.045em; }
+    h3 { font-size: 20px; line-height: 1.4; font-weight: 550; letter-spacing: -.025em; }
+    p + p { margin-top: 18px; }
+    ul { margin: 0; padding: 0; list-style: none; }
+    .wrap { width: min(calc(100% - var(--gutter) * 2), var(--max)); margin-inline: auto; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+    .skip-link { position: fixed; top: -80px; left: 20px; z-index: 100; padding: 12px 20px; background: var(--ink); color: var(--paper); }
+    .skip-link:focus { top: 15px; }
+    .meta { font: 11px/1.5 var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+    .muted { color: var(--muted); }
+    .accent { color: var(--accent); }
+    .italic { font-style: italic; }
+    .text-link { display: inline-flex; align-items: center; gap: 13px; min-height: 44px; color: var(--ink); font-size: 13px; font-weight: 600; text-decoration: none; }
+    .text-link span { border-bottom: 1px solid var(--line); }
+    .text-link:hover span { border-color: currentColor; }
+    .text-link:hover svg { transform: translate(2px, -2px); }
+    .text-link svg { width: 17px; height: 17px; transition: transform .18s ease; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 25px; min-height: 48px; padding: 12px 21px; border: 1px solid var(--ink); border-radius: var(--radius); background: var(--ink); color: var(--paper); font-size: 13px; line-height: 1.5; font-weight: 550; text-decoration: none; transition: background .18s ease, color .18s ease; }
+    .button:hover { background: var(--accent); border-color: var(--accent); color: var(--paper); }
+    .button.outline { background: transparent; color: var(--ink); border-color: var(--line); }
+    .button.outline:hover { border-color: var(--ink); }
+    .button svg { width: 16px; height: 16px; }
+    .section { padding-block: clamp(60px, 8vw, 110px); border-top: 1px solid var(--line); }
+    .section-top { display: grid; gap: 24px; margin-bottom: 36px; }
+    .section-label { color: var(--muted); display: flex; align-items: center; gap: 14px; }
+    .section-label::before { content: ''; width: 21px; height: 1px; background: currentColor; }
+    .section-intro { max-width: 420px; font-size: 15px; }
+    .section-heading { display: grid; gap: 25px; }
+    .section-heading h2 em { color: var(--accent); }
+    .headbar { position: sticky; top: 0; z-index: 30; background: var(--paper); border-bottom: 1px solid var(--line); }
+    .header-inner { position: relative; display: flex; align-items: center; gap: 12px; min-height: 76px; }
+    .brand { display: flex; align-items: center; gap: 13px; text-decoration: none; color: var(--ink); margin-right: auto; }
+    .brand-mark { font: italic 40px/.85 var(--serif); letter-spacing: -.095em; padding-right: 6px; }
+    .brand-copy { font-size: 11px; line-height: 1.3; letter-spacing: .02em; }
+    .brand-copy strong { display: block; font-size: 11px; font-weight: 650; }
+    .brand-copy span { display: block; color: var(--muted); margin-top: 3px; }
+    .site-nav { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 25px; }
+    .site-nav a { font-size: 12px; font-weight: 500; text-decoration: none; min-height: 44px; display: flex; align-items: center; border-bottom: 1px solid transparent; }
+    .site-nav a:hover { color: var(--accent); border-color: var(--accent); }
+    .icon-button { flex: 0 0 44px; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--ink); }
+    .icon-button:hover { background: var(--surface); }
+    #theme-toggle { margin-left: 15px; }
+    #menu-toggle { border-radius: var(--radius); }
+    .sun-icon, [data-theme="dark"] .moon-icon { display: none; }
+    [data-theme="dark"] .sun-icon { display: block; }
+    .hero { padding-top: clamp(42px, 6vw, 84px); padding-bottom: 0; }
+    .hero-grid { display: grid; gap: 44px; align-items: start; }
+    .hero-name { font-size: clamp(49px, 8.8vw, 117px); line-height: .98; letter-spacing: -.058em; }
+    .hero-name span { display: block; }
+    .hero-name .last-name { color: var(--accent); font-style: italic; }
+    .name-variants { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 17px; font-size: 12px; color: var(--muted); margin-top: 23px; }
+    .name-variants .fa-name { font: 16px/1.6 Tahoma, var(--sans); color: var(--ink); }
+    .hero-role { margin-top: 27px; font-size: clamp(17px, 2vw, 22px); font-weight: 500; color: var(--ink); letter-spacing: -.025em; line-height: 1.4; }
+    .hero-description { max-width: 430px; margin-top: 13px; font-size: 15px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 13px 26px; align-items: center; margin-top: 28px; }
+    .hero-aside { position: relative; background: var(--deep); color: var(--inverse); padding: 32px; min-height: 330px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; border-radius: var(--radius); }
+    .hero-aside::after { content: ''; position: absolute; height: 190px; width: 190px; right: -72px; bottom: 52px; border: 1px solid #76857a; border-radius: 50%; pointer-events: none; }
+    .aside-top { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--deep-line); padding-bottom: 20px; }
+    .aside-top svg { width: 28px; height: 28px; }
+    .aside-top span { font: 11px/1.5 var(--mono); letter-spacing: .06em; }
+    .aside-statement { font: 400 clamp(41px, 4.5vw, 60px)/1.04 var(--serif); letter-spacing: -.04em; position: relative; z-index: 1; margin-top: 24px; }
+    .aside-statement em { color: #d9b696; font-weight: 400; }
+    .aside-bottom { font: 11px/1.7 var(--mono); letter-spacing: .015em; color: var(--deep-muted); padding-top: 31px; position: relative; z-index: 1; }
+    .hero-foot { display: grid; gap: 20px; padding-block: 30px; border-top: 1px solid var(--line); margin-top: 48px; }
+    .hero-foot-item { display: flex; align-items: start; gap: 12px; }
+    .hero-foot-item svg { margin-top: 3px; width: 16px; height: 16px; color: var(--accent); }
+    .hero-foot-item strong { display: block; font-size: 12px; color: var(--ink); font-weight: 550; }
+    .hero-foot-item span { display: block; font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .about-grid { display: grid; gap: 35px; }
+    .about-body .lead { font-size: clamp(21px, 2.5vw, 28px); line-height: 1.55; letter-spacing: -.035em; color: var(--ink); }
+    .about-body > p:not(.lead) { font-size: 15px; max-width: 690px; }
+    .profile-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 23px 22px; margin-top: 28px; padding-top: 23px; border-top: 1px solid var(--line); }
+    .profile-facts dt { font: 10px/1.6 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+    .profile-facts dd { margin: 5px 0 0; font-size: 13px; color: var(--ink); }
+    .persian-about { background: var(--surface); padding: 25px 28px; border-right: 2px solid var(--accent); margin-top: 32px; font: 15px/2.15 Tahoma, var(--sans); }
+    .persian-about h3 { font: 600 16px/1.8 Tahoma, var(--sans); margin-bottom: 10px; }
+    .persian-about a { text-decoration-color: var(--muted); }
+    .work-list { display: grid; gap: 23px; }
+    .project { border: 1px solid var(--line); border-radius: var(--radius); }
+    .project-visual { padding: 28px; min-height: 252px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; }
+    .project-visual.dark { background: var(--deep); color: var(--inverse); }
+    .project-visual.pale { background: var(--surface); color: var(--ink); }
+    .project-visual .project-number { display: flex; justify-content: space-between; align-items: center; font: 11px/1.4 var(--mono); }
+    .project-wordmark { font: 400 clamp(44px, 5vw, 69px)/1 var(--serif); letter-spacing: -.05em; }
+    .project-wordmark em { color: #d9b696; }
+    .project-visual.pale .project-wordmark { font-style: italic; }
+    .project-visual .visual-description { font-size: 11px; padding-top: 20px; border-top: 1px solid currentColor; opacity: .9; }
+    .project-content { padding: 26px; }
+    .project-meta { color: var(--muted); font: 10px/1.6 var(--mono); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 14px; }
+    .project-content h3 { font: 400 clamp(26px, 3vw, 36px)/1.15 var(--serif); letter-spacing: -.035em; }
+    .project-content > p { margin-top: 15px; font-size: 14px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px 14px; margin-top: 21px; }
+    .tags li { font-size: 11px; padding-bottom: 3px; border-bottom: 1px solid var(--line); color: var(--muted); }
+    details summary { cursor: pointer; list-style: none; }
+    details summary::-webkit-details-marker { display: none; }
+    .project-detail { border-top: 1px solid var(--line); margin-top: 24px; }
+    .project-detail summary { padding-top: 15px; display: flex; justify-content: space-between; align-items: center; gap: 15px; font-size: 12px; font-weight: 600; color: var(--ink); min-height: 46px; }
+    .plus { position: relative; flex-shrink: 0; width: 15px; height: 15px; }
+    .plus::before, .plus::after { content: ''; position: absolute; background: currentColor; top: 7px; left: 1px; width: 13px; height: 1px; }
+    .plus::after { transform: rotate(90deg); transition: transform .18s ease; }
+    details[open] > summary .plus::after { transform: rotate(0deg); }
+    .detail-body { padding-top: 17px; font-size: 14px; }
+    .detail-body .scope { display: grid; gap: 10px; margin-top: 16px; }
+    .scope li { padding-left: 15px; border-left: 1px solid var(--accent); }
+    .scope strong { color: var(--ink); font-weight: 550; }
+    .open-source { display: grid; gap: 22px; margin-top: 35px; }
+    .open-source-title { padding-top: 13px; }
+    .open-source-title h3 { font-family: var(--serif); font-size: 26px; font-weight: 400; }
+    .open-source-title p { margin-top: 8px; font-size: 13px; }
+    .repo-list { display: grid; }
+    .repo { padding: 21px 0; border-top: 1px solid var(--line); text-decoration: none; display: grid; grid-template-columns: 1fr auto; gap: 7px 20px; }
+    .repo strong { color: var(--ink); font: 500 14px/1.5 var(--mono); overflow-wrap: anywhere; }
+    .repo > span { font-size: 13px; max-width: 590px; }
+    .repo svg { grid-column: 2; grid-row: 1 / 3; margin-top: 6px; }
+    .repo:hover strong { color: var(--accent); }
+    .expertise-grid { display: grid; gap: 30px; }
+    .expertise-item { border-top: 1px solid var(--line); padding-top: 23px; }
+    .expertise-item .meta { color: var(--accent); margin-bottom: 20px; }
+    .expertise-item h3 { margin-bottom: 12px; font: 400 27px/1.15 var(--serif); letter-spacing: -.04em; }
+    .expertise-item p { font-size: 14px; }
+    .toolbox { display: grid; gap: 0; margin-top: 39px; border-top: 1px solid var(--line); }
+    .tool-row { display: grid; gap: 12px; padding-block: 18px; border-bottom: 1px solid var(--line); font-size: 13px; }
+    .tool-row dt { color: var(--ink); font-weight: 600; }
+    .tool-row dd { margin: 0; }
+    .services { margin-top: 27px; background: var(--surface); padding: 0 24px; }
+    .services > summary { min-height: 68px; padding-block: 18px; display: flex; justify-content: space-between; align-items: center; gap: 20px; color: var(--ink); font-size: 14px; font-weight: 550; }
+    .service-list { display: grid; gap: 0 25px; padding-bottom: 24px; }
+    .service-list li { padding: 10px 0; border-top: 1px solid var(--line); font-size: 13px; }
+    .experience-layout { display: grid; gap: 36px; }
+    .timeline { display: grid; }
+    .job { display: grid; gap: 12px; padding: 24px 0; border-top: 1px solid var(--line); }
+    .job:first-child { border-top-color: var(--ink); }
+    .job-date { font: 11px/1.7 var(--mono); color: var(--muted); }
+    .job h3 { font-size: 18px; }
+    .job .employer { color: var(--accent); font-size: 13px; margin-top: 3px; }
+    .job .employment { font-size: 11px; color: var(--muted); margin-top: 9px; }
+    .job .job-description { font-size: 13px; margin-top: 10px; }
+    .current-dot { display: inline-block; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; margin-right: 8px; vertical-align: middle; }
+    .career-aside { font-size: 14px; max-width: 320px; margin-top: 22px; }
+    .writing-band { background: var(--deep); color: var(--inverse); padding-block: clamp(60px, 8vw, 105px); }
+    .writing-band h2, .writing-band h3 { color: var(--inverse); }
+    .writing-band .section-label { color: var(--deep-muted); }
+    .writing-band .section-heading h2 em { color: #d9b696; }
+    .writing-band .section-intro { color: var(--deep-muted); }
+    .writing-band .text-link { color: var(--inverse); }
+    .writing-band .text-link span { border-color: var(--deep-line); }
+    .featured-note { margin-top: 32px; border-top: 1px solid var(--deep-line); border-bottom: 1px solid var(--deep-line); }
+    .featured-note > summary { display: grid; gap: 19px; padding-block: 29px; position: relative; padding-right: 33px; }
+    .featured-note > summary .plus { position: absolute; right: 0; top: 38px; }
+    .featured-note h3 { font: 400 clamp(28px, 3.8vw, 46px)/1.16 var(--serif); letter-spacing: -.03em; }
+    .note-category { color: #d9b696; font: 10px/1.6 var(--mono); text-transform: uppercase; letter-spacing: .1em; }
+    .note-excerpt { font-size: 14px; color: var(--deep-muted); max-width: 640px; }
+    .note-article { max-width: 730px; padding-block: 7px 32px; font-size: 15px; }
+    .note-article p + p { margin-top: 18px; }
+    .note-article strong { color: var(--inverse); }
+    .note-article .article-quote { font: italic 26px/1.45 var(--serif); border-left: 1px solid #d9b696; padding-left: 22px; margin-block: 26px; }
+    .note-article .original { border-top: 1px solid var(--deep-line); margin-top: 25px; }
+    .original summary { min-height: 46px; padding-block: 14px; display: flex; gap: 12px; justify-content: space-between; font-size: 12px; }
+    .original div { font: 14px/2.2 Tahoma, var(--sans); padding: 12px 0 10px; color: var(--deep-muted); }
+    .notes-list { display: grid; }
+    .note { border-bottom: 1px solid var(--deep-line); }
+    .note > summary { display: grid; grid-template-columns: 1fr auto; gap: 9px 18px; padding-block: 23px; align-items: center; }
+    .note h3 { font: 400 clamp(21px, 2.5vw, 27px)/1.3 var(--serif); letter-spacing: -.025em; }
+    .note > summary .plus { grid-column: 2; grid-row: 1 / 3; }
+    .note .detail-body { padding-top: 0; padding-bottom: 25px; color: var(--deep-muted); max-width: 760px; }
+    .writing-bottom { margin-top: 27px; display: flex; gap: 15px 30px; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+    .writing-bottom p { font-size: 11px; color: var(--deep-muted); }
+    .recommendations { display: grid; gap: 35px; }
+    .recommendation { padding-top: 22px; border-top: 1px solid var(--line); }
+    .quotation-mark { display: block; color: var(--accent); font: 65px/.7 var(--serif); margin-top: 10px; margin-bottom: 17px; }
+    .recommendation blockquote { font: 400 clamp(19px, 2.3vw, 26px)/1.48 var(--serif); letter-spacing: -.015em; color: var(--ink); }
+    .recommendation figcaption { margin-top: 23px; }
+    .recommendation figcaption strong { display: block; font-size: 13px; font-weight: 600; color: var(--ink); }
+    .recommendation figcaption span { display: block; font-size: 12px; color: var(--muted); margin-top: 3px; }
+    .recommendation .credit { font-size: 10px; margin-top: 12px; color: var(--muted); }
+    .recommendation details { margin-top: 19px; }
+    .recommendation summary { display: inline-flex; min-height: 44px; align-items: center; gap: 18px; font-size: 12px; color: var(--ink); }
+    .recommendation .detail-body { font-size: 13px; }
+    .background-grid { display: grid; gap: 35px; }
+    .background-group { border-top: 1px solid var(--line); padding-top: 22px; }
+    .background-group > h3 { font: 400 28px/1.2 var(--serif); margin-bottom: 25px; }
+    .credential + .credential { margin-top: 23px; padding-top: 22px; border-top: 1px solid var(--line); }
+    .credential h4 { font-size: 14px; font-weight: 600; line-height: 1.55; }
+    .credential p { font-size: 13px; margin-top: 5px; }
+    .credential small { display: block; color: var(--muted); margin-top: 7px; font-size: 11px; }
+    .language-row { display: flex; justify-content: space-between; align-items: start; gap: 20px; padding-block: 13px; border-bottom: 1px solid var(--line); }
+    .language-row strong { font-size: 14px; color: var(--ink); }
+    .language-row span { font-size: 12px; text-align: right; }
+    .language-note { margin-top: 14px; font-size: 11px; color: var(--muted); }
+    .community { display: grid; gap: 30px; margin-top: 50px; padding: 28px; background: var(--surface); }
+    .community h3 { font: 400 29px/1.2 var(--serif); }
+    .community p { font-size: 14px; margin-top: 14px; }
+    .community .event-date { margin-top: 0; color: var(--accent); font-size: 11px; }
+    .causes { margin-top: 38px; padding-top: 26px; border-top: 1px solid var(--line); }
+    .causes h3 { font-size: 16px; margin-bottom: 14px; }
+    .cause-list { display: flex; flex-wrap: wrap; gap: 7px 17px; }
+    .cause-list li { font-size: 12px; line-height: 1.8; color: var(--muted); }
+    .cause-list li::before { content: '/'; color: var(--accent); margin-right: 10px; }
+    .people-followed { font-size: 12px; margin-top: 19px; color: var(--muted); }
+    .contact { padding-block: clamp(60px, 8vw, 105px); border-top: 1px solid var(--line); }
+    .contact-layout { display: grid; gap: 32px; }
+    .contact h2 { font-size: clamp(48px, 6.3vw, 83px); line-height: 1.03; }
+    .contact h2 em { color: var(--accent); }
+    .contact-description { margin-top: 24px; max-width: 450px; font-size: 14px; }
+    .contact-links { border-top: 1px solid var(--line); }
+    .contact-link { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); text-decoration: none; min-height: 76px; }
+    .contact-link strong { color: var(--ink); display: block; font-size: 15px; font-weight: 550; }
+    .contact-link small { display: block; font-size: 12px; margin-top: 3px; overflow-wrap: anywhere; }
+    .contact-link:hover strong { color: var(--accent); }
+    .utility-actions { display: flex; gap: 10px 20px; flex-wrap: wrap; margin-top: 24px; }
+    .utility-button { min-height: 44px; display: inline-flex; align-items: center; gap: 9px; padding: 8px 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); font-size: 12px; }
+    .utility-button svg { width: 16px; height: 16px; }
+    #action-status { margin-top: 14px; color: var(--accent); font-size: 12px; min-height: 21px; }
+    #copy-fallback { margin-top: 10px; }
+    #copy-fallback label { font-size: 12px; display: block; }
+    #profile-url { background: var(--surface); color: var(--ink); width: 100%; padding: 13px; border: 1px solid var(--line); border-radius: var(--radius); font-size: 13px; margin-top: 6px; }
+    .footer { border-top: 1px solid var(--line); padding-block: 24px 32px; }
+    .footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+    .footer-name { font: italic 26px/1.1 var(--serif); color: var(--ink); letter-spacing: -.04em; }
+    .footer-note { font-size: 10px; color: var(--muted); margin-top: 7px; }
+    .footer .top-link { display: inline-flex; min-height: 44px; gap: 14px; align-items: center; font: 10px/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+    .footer .top-link svg { width: 15px; height: 15px; transform: rotate(-45deg); }
+    .source-links { display: flex; flex-wrap: wrap; gap: 7px 20px; margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--line); font-size: 10px; color: var(--muted); }
+    .source-links a { min-height: 30px; display: inline-flex; align-items: center; }
+    @media (min-width: 600px) {
+      .hero-foot { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+      .expertise-grid, .recommendations { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .service-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .tool-row { grid-template-columns: 155px 1fr; gap: 25px; }
+      .background-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .job { grid-template-columns: 125px 1fr; gap: 23px; }
+    }
+    @media (min-width: 900px) {
+      .hero-grid { grid-template-columns: 1.5fr 1fr; gap: clamp(35px, 6vw, 90px); align-items: center; }
+      .hero-aside { min-height: 439px; padding: 32px 35px; }
+      .hero-foot { margin-top: 56px; padding-block: 28px; }
+      .hero-foot-item + .hero-foot-item { padding-left: 25px; border-left: 1px solid var(--line); }
+      .section-top { grid-template-columns: 180px 1fr; gap: 35px; margin-bottom: 45px; }
+      .section-label { align-self: start; margin-top: 8px; }
+      .section-heading { grid-template-columns: 1fr minmax(230px, .78fr); align-items: end; gap: 40px; }
+      .about-grid { grid-template-columns: 180px 1fr; gap: 35px; }
+      .about-body .lead { max-width: 800px; }
+      .profile-facts { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .project { display: grid; grid-template-columns: .9fr 1.1fr; }
+      .project-visual { min-height: 348px; padding: 30px 38px; }
+      .project-content { padding: 32px 38px; }
+      .open-source { grid-template-columns: .9fr 1.1fr; gap: 65px; }
+      .expertise-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+      .expertise-item h3 { font-size: 27px; }
+      .expertise-item p { font-size: 13px; }
+      .experience-layout { grid-template-columns: .75fr 1.25fr; gap: 80px; }
+      .timeline .job { grid-template-columns: 140px 1fr; }
+      .featured-note > summary { grid-template-columns: .35fr 1fr; gap: 18px 40px; }
+      .featured-note .note-category { margin-top: 9px; }
+      .featured-note h3 { grid-column: 2; }
+      .featured-note .note-excerpt { grid-column: 2; }
+      .featured-note > .note-article { margin-left: calc((100% - 73px) * .2593 + 40px); }
+      .note > summary { grid-template-columns: .35fr 1fr auto; gap: 25px 40px; }
+      .note > summary .plus { grid-column: 3; grid-row: 1; }
+      .note > .detail-body { margin-left: calc((100% - 73px) * .2593 + 40px); }
+      .recommendations { gap: 60px; }
+      .background-grid { grid-template-columns: 1fr 1.1fr .9fr; gap: 40px; }
+      .community { grid-template-columns: 1fr 1.6fr; gap: 40px; padding: 34px 38px; }
+      .contact-layout { grid-template-columns: 1.1fr .9fr; gap: 95px; }
+      .contact-links { margin-top: 7px; }
+    }
+    @media (min-width: 960px) { #menu-toggle { display: none; } }
+    @media (max-width: 959px) {
+      .header-inner { flex-wrap: wrap; min-height: 69px; padding-block: 10px; }
+      .brand-copy { display: none; }
+      .site-nav { width: 100%; order: 4; padding-block: 9px 10px; gap: 0 20px; }
+      #menu-toggle { order: 3; }
+      #theme-toggle { order: 2; margin-left: 0; }
+      .js .site-nav { display: none; }
+      .js .site-nav.is-open { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 20px; border-top: 1px solid var(--line); margin-top: 5px; }
+      .js .site-nav a { min-height: 44px; font-size: 14px; }
+    }
+    @media (max-width: 599px) {
+      .hero-aside { padding: 25px 28px; min-height: 295px; }
+      .aside-statement { font-size: 46px; }
+      .hero-actions { gap: 12px 22px; }
+      .hero-foot { margin-top: 29px; gap: 16px; padding-block: 25px; }
+      .hero-foot-item span { display: inline; }
+      .hero-foot-item strong { display: inline; font-size: 12px; }
+      .hero-foot-item strong::after { content: ' / '; color: var(--muted); margin-inline: 5px; }
+      .hero-role { max-width: 310px; }
+      .name-variants { gap: 6px 14px; }
+      .project-content { padding: 25px 22px; }
+      .project-visual { min-height: 235px; padding: 25px; }
+      .section-top { margin-bottom: 29px; }
+      .section-heading { gap: 20px; }
+      .persian-about { padding: 22px; }
+      .featured-note h3 { font-size: 31px; }
+      .community { padding: 25px 22px; }
+      .profile-facts { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 359px) {
+      .hero-name { font-size: 46px; }
+      .hero-actions { align-items: stretch; flex-direction: column; }
+      .hero-actions .text-link { justify-content: center; }
+      .hero-aside { padding: 23px; }
+      .profile-facts { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+    @media (prefers-contrast: more) {
+      :root { --muted: #3c4842; --line: #62685f; }
+      [data-theme="dark"] { --muted: #d3d9cf; --line: #b2beb0; }
+    }
+    @media print {
+      :root, [data-theme="dark"] { color-scheme: light; --paper: #fff; --surface: #fff; --ink: #000; --body: #222; --muted: #444; --line: #aaa; --accent: #333; }
+      html { scroll-behavior: auto; }
+      body { font-size: 11pt; }
+      .wrap { width: 100%; }
+      .headbar, .hero-aside, .hero-actions, .utility-actions, #action-status, #copy-fallback, .top-link, .skip-link { display: none !important; }
+      .section, .contact, .writing-band { padding-block: 25px; }
+      .hero { padding-top: 0; }
+      .hero-name { font-size: 43pt; }
+      .hero-name span { display: inline; }
+      .hero-role { font-size: 15pt; }
+      .hero-grid, .section-top, .section-heading, .about-grid, .project, .experience-layout, .contact-layout { display: block; }
+      .section-label { margin-bottom: 14px; }
+      .hero-foot { margin-top: 20px; }
+      .project-visual { min-height: auto; padding: 16px 20px; gap: 15px; }
+      .project-wordmark { font-size: 26pt; }
+      .project-content { padding: 20px; }
+      .project-visual.dark, .writing-band { background: #fff !important; color: #222 !important; }
+      .writing-band h2, .writing-band h3, .writing-band .section-label, .writing-band .section-intro, .writing-band .note-excerpt, .writing-band .detail-body, .writing-band .text-link, .writing-band .original div, .writing-band .note-category, .note-article strong { color: #222 !important; }
+      .writing-band h2 em, .project-wordmark em { color: #333 !important; }
+      .featured-note > summary { display: block; }
+      .featured-note h3 { margin-block: 12px; }
+      .note > summary { display: block; }
+      .note h3 { margin-top: 7px; }
+      .featured-note > .note-article, .note > .detail-body { margin-left: 0; }
+      .plus, .original, .writing-bottom { display: none !important; }
+      .recommendations, .background-grid { display: block; }
+      .recommendation, .background-group, .credential, .job, .repo { break-inside: avoid; }
+      .background-group, .recommendation { margin-top: 20px; }
+      h2, h3, h4 { break-after: avoid; }
+      .contact-link { padding: 9px 0; min-height: 50px; }
+      .contact-layout h2 { font-size: 30pt; }
+      .footer { margin-top: 20px; }
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World - AmirHosseinMoloudi</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<a class="skip-link" href="#main">Skip to content</a>
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;overflow:hidden">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a17 17 0 0 1 0 18 17 17 0 0 1 0-18Z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 8V3h10v5M7 17H3v-7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v7h-4"/><path d="M7 14h10v7H7zM17 11h1"/></symbol>
+  </defs>
+</svg>
+<header class="headbar">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Amirhossein Moloudi — back to top">
+      <span class="brand-mark" aria-hidden="true">am.</span>
+      <span class="brand-copy"><strong>Amirhossein Moloudi</strong><span>Architecture & engineering</span></span>
+    </a>
+    <button id="menu-toggle" class="icon-button" type="button" aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14M5 16h14"/></svg>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#writing">Writing</a><a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="icon-button" type="button" aria-label="Switch to dark appearance" aria-pressed="false" title="Switch to dark appearance" hidden>
+      <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 13.1A9 9 0 0 1 10.9 3.2a9 9 0 1 0 9.9 9.9Z"/></svg>
+      <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg>
+    </button>
+  </div>
+</header>
+<main id="main">
+  <section class="hero wrap" id="top" aria-labelledby="profile-name">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <h1 class="hero-name" id="profile-name"><span>Amirhossein</span> <span class="last-name">Moloudi.</span></h1>
+        <p class="name-variants"><span>Amir Hossein Moloudi</span><span aria-hidden="true">/</span><span class="fa-name" lang="fa" dir="rtl">امیرحسین مولودی</span></p>
+        <p class="hero-role">IT Solutions Architect<br>& Technical Lead.</p>
+        <p class="hero-description">I connect business needs, dependable systems, and the people who build and use them.</p>
+        <div class="hero-actions">
+          <a class="button" href="#work">Explore my work <svg aria-hidden="true"><use href="#i-right"/></svg></a>
+          <a class="text-link" href="https://www.linkedin.com/in/amoloudi/" target="_blank" rel="noopener noreferrer"><span>Connect on LinkedIn</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <aside class="hero-aside" aria-label="Engineering approach">
+        <div class="aside-top"><span>Architecture / Engineering</span><svg aria-hidden="true"><use href="#i-layers"/></svg></div>
+        <p class="aside-statement">Systems<br>thinking.<br><em>Human<br>perspective.</em></p>
+        <p class="aside-bottom">Rust & Java · Cloud-native systems<br>Technical leadership · Mentorship</p>
+      </aside>
+    </div>
+    <div class="hero-foot">
+      <div class="hero-foot-item"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><strong>Mashhad, Iran</strong><span>Razavi Khorasan</span></div></div>
+      <div class="hero-foot-item"><svg aria-hidden="true"><use href="#i-layers"/></svg><div><strong>Technical Lead at Mammute</strong><span>Software architecture to production</span></div></div>
+      <div class="hero-foot-item"><svg aria-hidden="true"><use href="#i-globe"/></svg><div><strong>English & Persian</strong><span>Former ESL instructor</span></div></div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="about" aria-labelledby="about-title">
+    <div class="about-grid">
+      <p class="section-label meta">01 / About</p>
+      <div class="about-body">
+        <h2 id="about-title">The person behind<br><em class="accent">the architecture.</em></h2>
+        <p class="lead" style="margin-top:28px">Good engineering connects the system, the business, and the human on the other side of the screen.</p>
+        <p>I’m Amirhossein Moloudi, an IT Solutions Architect and Technical Lead at Mammute. My work spans cloud-native architecture, microservices, event-driven and serverless approaches, and distributed systems—with hands-on engineering across the product lifecycle.</p>
+        <p>I work with Rust/Actix and Java/Spring, API-first design, Agile delivery, and mentoring. My professional interests include legacy modernization, greenfield development, and managing technical debt without losing sight of maintainability, reliability, or user experience.</p>
+        <p>Before and alongside my software career, I taught English as a Second Language to teenagers and adults. Technical work and clear communication are both part of my background.</p>
+        <dl class="profile-facts">
+          <div><dt>Based in</dt><dd>Mashhad County, Iran</dd></div>
+          <div><dt>Professional focus</dt><dd>Architecture & technical leadership</dd></div>
+          <div><dt>Software work since</dt><dd>March 2015</dd></div>
+          <div><dt>Pronouns</dt><dd>He / him</dd></div>
+        </dl>
+        <div class="persian-about" lang="fa" dir="rtl">
+          <h3>امیرحسین مولودی — معمار راهکارهای فناوری اطلاعات و راهبر فنی</h3>
+          <p>من امیرحسین مولودی هستم؛ در ماموت در زمینه معماری راهکارهای فناوری اطلاعات و راهبری فنی فعالیت می‌کنم. تمرکز حرفه‌ای من بر معماری ابری، میکروسرویس‌ها، سیستم‌های رویدادمحور و توزیع‌شده، توسعه نرم‌افزار و منتورینگ است. پیش‌تر نیز به نوجوانان و بزرگسالان زبان انگلیسی تدریس کرده‌ام.</p>
+          <p>برای من کیفیت نرم‌افزار فقط به معماری و سرعت محدود نمی‌شود؛ احترام به زمان، توجه و اعتماد کاربر هم بخشی از مسئولیت مهندسی است.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="work" aria-labelledby="work-title">
+    <div class="section-top">
+      <p class="section-label meta">02 / Selected work</p>
+      <div class="section-heading"><h2 id="work-title">Real products.<br><em>Shared effort.</em></h2><p class="section-intro">From integrated business operations to a cohesive digital presence. Work built alongside the Mammute team.</p></div>
+    </div>
+    <div class="work-list">
+      <article class="project">
+        <div class="project-visual dark">
+          <div class="project-number"><span>01 / BUSINESS PLATFORM</span><svg aria-hidden="true"><use href="#i-layers"/></svg></div>
+          <p class="project-wordmark">Kava<em>CRM</em></p>
+          <p class="visual-description">Customers. Operations. Intelligence.</p>
+        </div>
+        <div class="project-content">
+          <p class="project-meta">Apr 2026 – Present / Mammute</p>
+          <h3>One platform.<br>The whole business.</h3>
+          <p>KavaCRM is an AI-assisted CRM and integrated business-management platform connecting customer data, sales, projects, finance, inventory, and workflow automation.</p>
+          <ul class="tags" aria-label="Project disciplines"><li>Product architecture</li><li>Full-stack engineering</li><li>AI-assisted workflows</li></ul>
+          <details class="project-detail">
+            <summary>Role & engineering scope <span class="plus" aria-hidden="true"></span></summary>
+            <div class="detail-body">
+              <p>Built and led end-to-end engineering alongside the Mammute team: product architecture, frontend and backend development, APIs, data modeling, authentication and access control, integrations, deployment, and production operations.</p>
+              <ul class="scope"><li><strong>Business capabilities:</strong> CRM, leads and sales pipelines, customer data, internal projects, accounting and finance, inventory and warehouse management.</li><li><strong>Automation:</strong> Workflow and process automation, AI-powered tools and assistants, and integrated management of core operations.</li><li><strong>Engineering priorities:</strong> Scalability, maintainability, security, reliability, and a consistent user experience.</li><li><strong>Collaboration:</strong> Developed with the Mammute team, including Mehrdad Moqimi.</li></ul>
+            </div>
+          </details>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-visual pale">
+          <div class="project-number"><span>02 / DIGITAL EXPERIENCE</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></div>
+          <p class="project-wordmark">Mammute.</p>
+          <p class="visual-description">A multidisciplinary practice, brought together.</p>
+        </div>
+        <div class="project-content">
+          <p class="project-meta">Jan 2026 / Corporate website</p>
+          <h3>A clear digital home<br>for a multidisciplinary team.</h3>
+          <p>Designed and developed a corporate website presenting services across branding, software, architecture, digital marketing, and urban innovation.</p>
+          <ul class="tags" aria-label="Project disciplines"><li>Information architecture</li><li>UI/UX</li><li>Responsive development</li></ul>
+          <details class="project-detail">
+            <summary>Role & delivery scope <span class="plus" aria-hidden="true"></span></summary>
+            <div class="detail-body"><p>Worked across information architecture, UI/UX, frontend implementation, responsive behavior, content structure, performance optimization, SEO foundations, and deployment to create a cohesive, scalable, and professional web experience.</p><p>Developed in collaboration with Mehrdad Moqimi and the Mammute team.</p><a class="text-link" href="https://honarekhalagh.com/" target="_blank" rel="noopener noreferrer"><span>Visit the company website</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+          </details>
+        </div>
+      </article>
+    </div>
+    <div class="open-source">
+      <div class="open-source-title"><h3>Also, in the open.</h3><p>Selected public repositories.</p><a class="text-link" href="https://github.com/AmirHosseinMoloudi" target="_blank" rel="noopener noreferrer"><span>Explore my code profile</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      <div class="repo-list">
+        <a class="repo" href="https://github.com/AmirHosseinMoloudi/archive-uploader-extractor" target="_blank" rel="noopener noreferrer"><strong>archive-uploader-extractor</strong><span>A PHP application for large archives, multipart uploads, memory-efficient streaming, and extraction.</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="repo" href="https://github.com/AmirHosseinMoloudi/ubuntu-stack-ignition" target="_blank" rel="noopener noreferrer"><strong>ubuntu-stack-ignition</strong><span>An interactive Bash toolkit for configuring and deploying web-application stacks on Ubuntu servers.</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="expertise" aria-labelledby="expertise-title">
+    <div class="section-top"><p class="section-label meta">03 / Expertise</p><div class="section-heading"><h2 id="expertise-title">The big picture.<br><em>The important details.</em></h2><p class="section-intro">Architecture, hands-on development, technical leadership, and the work of keeping software useful over time.</p></div></div>
+    <div class="expertise-grid">
+      <article class="expertise-item"><p class="meta">01 / Architecture</p><h3>Systems that<br>fit the problem.</h3><p>Software solution architecture, information system design, cloud-native systems, microservices, distributed systems, event-driven design, and serverless approaches.</p></article>
+      <article class="expertise-item"><p class="meta">02 / Engineering</p><h3>From design<br>to delivery.</h3><p>Frontend and backend development, APIs, data modeling, authentication, access control, integrations, deployment, and production operations.</p></article>
+      <article class="expertise-item"><p class="meta">03 / Leadership</p><h3>Technical clarity.<br>Team growth.</h3><p>Hands-on technical leadership, technical staff management, mentoring, Agile delivery, and API-first thinking.</p></article>
+      <article class="expertise-item"><p class="meta">04 / Evolution</p><h3>Improve what is.<br>Build what’s next.</h3><p>Legacy modernization, greenfield development, technical-debt management, and a focus on maintainability, reliability, and user experience.</p></article>
+    </div>
+    <dl class="toolbox">
+      <div class="tool-row"><dt>Core focus</dt><dd>Rust / Actix · Java / Spring · Cloud-native architecture · Distributed systems · DevOps</dd></div>
+      <div class="tool-row"><dt>Application development</dt><dd>Svelte · Laravel · Express.js · FastAPI · PHP · JavaScript · TypeScript · Vue.js · Node.js · CodeIgniter</dd></div>
+      <div class="tool-row"><dt>Data & interfaces</dt><dd>MySQL · PostgreSQL · MongoDB · Redis · RESTful APIs · GraphQL</dd></div>
+      <div class="tool-row"><dt>Delivery & tooling</dt><dd>Git · Docker · CI/CD · Unit, integration & end-to-end testing · Vite · Webpack · Babel · HTML & CSS · WordPress · Figma · Adobe Creative Suite</dd></div>
+      <div class="tool-row"><dt>Foundations</dt><dd>Information literacy · Computer literacy · European Computer Driving Licence (ECDL) · English as a Second Language · Teaching English as a Foreign Language</dd></div>
+    </dl>
+    <details class="services" id="services"><summary>Professional services <span class="plus" aria-hidden="true"></span></summary><ul class="service-list"><li>Web Development</li><li>Application Development</li><li>Business Analytics</li><li>Cloud Application Development</li><li>Custom Software Development</li><li>Database Development</li><li>Web Design</li><li>Software Testing</li><li>Mobile Application Development</li><li>Enterprise Content Management</li></ul></details>
+  </section>
+
+  <section class="section wrap" id="experience" aria-labelledby="experience-title">
+    <div class="experience-layout">
+      <div><p class="section-label meta" style="margin-bottom:27px">04 / Experience</p><h2 id="experience-title">A career built<br><em class="accent">by doing.</em></h2><p class="career-aside">From web development and language teaching to solution architecture and technical leadership.</p></div>
+      <div class="timeline">
+        <article class="job"><p class="job-date"><span class="current-dot" aria-hidden="true"></span>Sep 2024<br>– Present</p><div><h3>Technical Lead</h3><p class="employer">Mammute</p><p class="employment">Full-time · Hybrid · Mashhad County, Iran</p><p class="job-description">Hands-on technical leadership and technical staff management.</p></div></article>
+        <article class="job"><p class="job-date">Mar 2020<br>– Sep 2024</p><div><h3>IT Solutions Architect</h3><p class="employer">Mammute</p><p class="employment">Full-time · Hybrid · Mashhad County, Iran</p><p class="job-description">IT solutions architecture. Profile-listed technologies include Svelte and Laravel.</p></div></article>
+        <article class="job"><p class="job-date">Mar 2020<br>1 month</p><div><h3>Short-Term Web Development Apprentice</h3><p class="employer">AminSoft</p><p class="employment">Apprenticeship · Remote · Mashhad, Iran</p><p class="job-description">Short-term web-development apprenticeship.</p></div></article>
+        <article class="job"><p class="job-date">Mar 2015<br>– Mar 2020</p><div><h3>Web Developer</h3><p class="employer">Kava Company</p><p class="employment">Part-time · Hybrid · Mashhad County, Iran</p><p class="job-description">Web development. Profile-listed technologies include Express.js and FastAPI.</p></div></article>
+        <article class="job"><p class="job-date">Sep 2018<br>– Sep 2019</p><div><h3>English Second Language Teacher</h3><p class="employer">Bayan Language Academy</p><p class="employment">Part-time · On-site · Mashhad, Iran</p><p class="job-description">Instructed English as a Second Language to teenage and adult learners.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="writing-band" id="writing" aria-labelledby="writing-title">
+    <div class="wrap">
+      <div class="section-top"><p class="section-label meta">05 / Field notes</p><div class="section-heading"><h2 id="writing-title">Beyond the code.<br><em>Inside the decisions.</em></h2><p class="section-intro">Selected ideas from my writing on software engineering, reliability, cost, and the people behind every interaction.</p></div></div>
+      <details class="featured-note" id="session-note">
+        <summary><span class="note-category">User experience<br>12 October 2026</span><h3>Your Session Expired.<br>So Did 15 Minutes of Your Life.</h3><p class="note-excerpt">Great software isn’t just about performance and architecture. It’s about protecting users’ time when real life interrupts.</p><span class="plus" aria-hidden="true"></span></summary>
+        <div class="note-article">
+          <p>One of the most frustrating messages you can encounter online is: <strong>“Your session has expired.”</strong> Especially when the 15 minutes you spent filling out a form have apparently expired along with it.</p>
+          <p>You’re almost finished. Your phone rings. You step away for a couple of minutes, come back, and discover that everything you entered is gone.</p>
+          <p>From the system’s perspective, a session simply expired. From the user’s perspective, 15 minutes of their life just disappeared.</p>
+          <p>We spend considerable time on performance, architecture, interface design, optimization, and countless technical details. But people don’t use our products under perfect laboratory conditions. Connections drop, tabs close accidentally, attention shifts, and buttons get clicked twice.</p>
+          <p>A well-engineered product should account for those everyday realities. A lost connection shouldn’t automatically mean re-entering everything. A frozen submission shouldn’t leave someone guessing whether their request was processed. Non-sensitive input should, where appropriate, survive navigation and interruption.</p>
+          <p>None of this is trivial. Data security, state management, duplicate requests, and recovery all need deliberate engineering.</p>
+          <p class="article-quote">But those complexities are our responsibility, not the user’s burden.</p>
+          <p>The purpose of automation is to simplify processes. Users shouldn’t need to understand what happens behind a button, and they shouldn’t have to pay for its technical shortcomings.</p>
+          <p>In the age of AI, these decisions are an important part of what makes our work valuable: respecting people’s time, attention, and trust.</p>
+          <details class="original"><summary>Read the original perspective in Persian <span class="plus" aria-hidden="true"></span></summary><div lang="fa" dir="rtl"><p>به نظرم یکی از حالگیر ترین جمله‌های اینترنت اینه: نشست شما منقضی شد... مخصوصا وقتی می‌فهمی اون ۱۵ دقیقه‌ای که داشتی فرم پر می‌کردی هم همراهش منقضی شده! :)</p><p>یه فرم طولانی پر کردی، رسیدی نزدیک اخرش یه نفر زنگ زده دو دقیقه رفتی یه کار دیگه کردی برگشتی و دیدی همه‌چی پریده.. از نظر سیستم اتفاق خاصی نیفتاده یه Session تموم شده همین. ولی از نظر کسی که اون طرف صفحه نشسته ۱۵ دقیقه از زندگیش رفته هوا!</p><p>چیزی که برام جالبه اینه که ما توی توسعه نرم‌افزار کلی وقت می‌ذاریم روی چیزایی مثل سرعت، معماری، ظاهر، بهینه‌سازی و هزار تا جزئیات دیگه ولی بعضی وقتا یادمون می‌ره ادم‌ها توی شرایط ازمایشگاهی از محصولمون استفاده نمی‌کنن..</p><p>وسط کارشون تلفن زنگ می‌خوره اینترنت قطع می‌شه اشتباهی یه تب رو می‌بندن حواسشون پرت می‌شه یا حتی یه دکمه رو دوبار می‌زنن و به نظرم یه محصول خوب باید برای این اتفاق‌های کاملا معمولی هم برنامه داشته باشه.</p><p>مثلا وقتی اینترنت قطع می‌شه لازم نباشه همه‌چی رو دوباره وارد کنی وقتی روی ثبت کلیک کردی و صفحه هنگ کرد مجبور نباشی حدس بزنی درخواستت ثبت شده یا نه یا وقتی از یه صفحه برمی‌گردی اطلاعات غیرحساسی که وارد کردی هنوز سر جاش باشه..</p><p>البته این کارها همیشه هم ساده نیستن بحث امنیت اطلاعات نگهداری وضعیت کاربر ثبت تکراری درخواست‌ها و کلی جزئیات فنی وسطه. ولی خب این پیچیدگی‌ها مشکل ماست نه کاربر.. هدف از ساخت اتوماسیون ها مشخصه.. اتوماتیک سازی فرایندها.</p><p>کاربر قرار نیست بدونه پشت اون دکمه چه خبره فقط نباید تاوانش رو بده. امیرحسین مولودی هستم و از نظرات همه افراد عزیزی که ممکنه این پست رو ببینند استقبال میکنم. بنظرم توی عصر هوش مصنوعی همین تفاوت هاست که به کار ارزش میده و تفاوت ایجاد میکنه.</p></div></details>
+        </div>
+      </details>
+      <div class="notes-list">
+        <details class="note"><summary><span class="note-category">Core banking / 02 Oct 2026</span><h3>Speed matters. Correctness comes first.</h3><span class="plus" aria-hidden="true"></span></summary><div class="detail-body"><p>A perspective on COBOL, Java, Rust, Go, Python, and Node.js in banking systems: choose tools for their fit, not their novelty. My focus is on correct financial operations, idempotent requests, atomic debit and credit posting, reliable event publication, and testing retries when a successful response is lost.</p></div></details>
+        <details class="note"><summary><span class="note-category">Product development / 17 Sep 2026</span><h3>Building an integrated business platform, together.</h3><span class="plus" aria-hidden="true"></span></summary><div class="detail-body"><p>Introducing KavaCRM and my contribution as a member of its development team. The platform brings CRM, sales pipelines, projects, finance, inventory, automation, and AI-assisted workflows into one environment.</p><a class="text-link" href="#work"><span>Explore the project</span><svg aria-hidden="true"><use href="#i-right"/></svg></a></div></details>
+        <details class="note"><summary><span class="note-category">Reliability / 15 Sep 2026</span><h3>Retries are not a resilience strategy on their own.</h3><span class="plus" aria-hidden="true"></span></summary><div class="detail-body"><p>My post explores how retries can amplify an already stressed dependency, particularly when multiple layers retry independently. It discusses bounded timeouts, backoff, jitter, retry limits, safe repetition, circuit breaking, backpressure, and failing fast when appropriate.</p><p>Not every error deserves the same response. Sometimes the most reliable decision is to stop retrying and let the dependency recover.</p></div></details>
+        <details class="note"><summary><span class="note-category">FinOps / 27 Aug 2026</span><h3>Architecture has an operating cost.</h3><span class="plus" aria-hidden="true"></span></summary><div class="detail-body"><p>A practical discussion of media delivery, heavy reporting workloads, oversized logging infrastructure, and database connection pooling. The central idea: architectural decisions affect operating costs, and buying more hardware is not a substitute for understanding the workload.</p></div></details>
+        <details class="note"><summary><span class="note-category">Production engineering / 27 Aug 2026</span><h3>Running is not the same as production-ready.</h3><span class="plus" aria-hidden="true"></span></summary><div class="detail-body"><p>My deployment checklist considers a reverse proxy, TLS, process supervision, restart and reboot behavior, restricted public ports, and useful logs. Starting a process is one step; making a service manageable and recoverable is another.</p></div></details>
+      </div>
+      <div class="writing-bottom"><p>English adaptations and summaries of my published posts.</p><a class="text-link" href="https://www.linkedin.com/in/amoloudi/recent-activity/all/" target="_blank" rel="noopener noreferrer"><span>More writing on LinkedIn</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="recommendations" aria-labelledby="recommendations-title">
+    <div class="section-top"><p class="section-label meta">06 / In good company</p><div class="section-heading"><h2 id="recommendations-title">In the words<br><em>of collaborators.</em></h2><p class="section-intro">Recommendations from colleagues who worked with me across different teams.</p></div></div>
+    <div class="recommendations">
+      <figure class="recommendation"><span class="quotation-mark" aria-hidden="true">“</span><blockquote>He’s patient, easy to work with, and always keeps things straightforward without making them more complicated than they need to be.</blockquote><figcaption><strong>Mohammad VahidiBorji</strong><span>Urban Planner & Geospatial Product Developer</span><p class="credit">LinkedIn recommendation · 17 September 2026 · Excerpt</p></figcaption><details><summary>Read the full recommendation <span class="plus" aria-hidden="true"></span></summary><p class="detail-body">I really enjoyed working with Amirhossein. He’s patient, easy to work with, and always keeps things straightforward without making them more complicated than they need to be. Communication with him is easy, and he brings a calm, positive attitude to the work. I’d be happy to work with him again.</p></details></figure>
+      <figure class="recommendation"><span class="quotation-mark" aria-hidden="true">“</span><blockquote>Amirhossein possesses a rare blend of deep technical expertise and strong strategic thinking, allowing him to seamlessly bridge the gap between complex engineering challenges and high-level business goals.</blockquote><figcaption><strong>Sina Ataee</strong><span>Urban Innovation Strategist · PhD Researcher, University of Aveiro</span><p class="credit">LinkedIn recommendation · 17 September 2026 · Excerpt</p></figcaption><details><summary>Read the full recommendation <span class="plus" aria-hidden="true"></span></summary><p class="detail-body">I highly recommend Amirhossein as an IT Solutions Architect. Having worked together across different teams, I have seen firsthand his exceptional ability to design scalable, efficient, and robust IT architecture. Amirhossein possesses a rare blend of deep technical expertise and strong strategic thinking, allowing him to seamlessly bridge the gap between complex engineering challenges and high-level business goals. He is a collaborative professional, a brilliant problem-solver, and a tremendous asset to any organization looking to elevate their technology infrastructure.</p></details></figure>
+    </div>
+  </section>
+
+  <section class="section wrap" id="background" aria-labelledby="background-title">
+    <div class="section-top"><p class="section-label meta">07 / Background</p><div class="section-heading"><h2 id="background-title">More than<br><em>a technical profile.</em></h2><p class="section-intro">Education, languages, credentials, mentorship, and the causes I care about.</p></div></div>
+    <div class="background-grid">
+      <div class="background-group"><h3>Education.</h3><div class="credential"><h4>Bachelor’s in Law</h4><p>Azad University (IAU)</p><small>Mashhad County, Razavi Khorasan, Iran</small></div><div class="credential"><h4>High School Diploma in Experimental Sciences</h4><p>Dr. Moein High School</p><small>Mashhad County, Razavi Khorasan, Iran</small></div></div>
+      <div class="background-group"><h3>Certification.</h3><div class="credential"><h4>ICDL User<br>(International Computer Driving Licence)</h4><p>Iran Technical and Vocational Training Organization (IRTVTO)</p><small>Issued October 2024 · Expires October 2029</small><small>Credential ID: <bdi>41424462</bdi></small><p>130 hours of training.<br>Assessment score: 82/100.</p></div></div>
+      <div class="background-group"><h3>Languages.</h3><div class="language-row"><strong>English</strong><span>Professional<br>working proficiency</span></div><div class="language-row"><strong>Persian</strong><span>Native or bilingual<br>proficiency</span></div><p class="language-note">Duolingo learning score: 129, listed March 2025. This is a learning-app score, not an English Test certification.</p></div>
+    </div>
+    <div class="community">
+      <div><p class="event-date meta">Mentorship & speaking</p><h3 style="margin-top:15px">Building skills.<br>Sharing perspective.</h3></div>
+      <div><h4 style="font-size:15px;font-weight:600">AI-assisted software-engineering hackathon</h4><p>Mentor and speaker at the Mammut Accelerator hackathon in Mashhad on 4 September 2026, alongside Mehrdad Moqimi.</p><p>Six teams worked on a shared problem. The emphasis was not simply generating code faster, but engineering judgment, teamwork, testing, delivery, and responsible use of AI as an assistant.</p><a class="text-link" href="https://lnkd.in/d2cWDySq" target="_blank" rel="noopener noreferrer"><span>View the event on LinkedIn</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+    </div>
+    <div class="causes"><h3>Causes I’m open to supporting</h3><ul class="cause-list"><li>Arts and Culture</li><li>Civil Rights and Social Action</li><li>Disaster and Humanitarian Relief</li><li>Economic Empowerment</li><li>Education</li><li>Human Rights</li><li>Poverty Alleviation</li><li>Science and Technology</li><li>Social Services</li></ul><p class="people-followed">Among the voices I follow: Reid Hoffman and Tim O’Reilly.</p></div>
+  </section>
+
+  <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+    <div class="contact-layout">
+      <div><p class="section-label meta" style="margin-bottom:27px">08 / Contact</p><h2 id="contact-title">Good work starts<br>with a <em>conversation.</em></h2><p class="contact-description">A software challenge, an architecture decision, a mentoring conversation, or a different perspective on something I’ve written—let’s connect.</p></div>
+      <div>
+        <div class="contact-links">
+          <a class="contact-link" href="https://www.linkedin.com/in/amoloudi/" target="_blank" rel="noopener noreferrer"><span><strong>Connect professionally</strong><small>LinkedIn / amoloudi</small></span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="contact-link" href="https://github.com/AmirHosseinMoloudi" target="_blank" rel="noopener noreferrer"><span><strong>Explore the code</strong><small>GitHub / AmirHosseinMoloudi</small></span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="contact-link" href="mailto:ahmoloudi786@gmail.com"><span><strong>Send an email</strong><small>ahmoloudi786@gmail.com</small></span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="utility-actions"><button class="utility-button" id="copy-profile" type="button" hidden><svg aria-hidden="true"><use href="#i-copy"/></svg>Copy profile link</button><button class="utility-button" id="print-profile" type="button" hidden><svg aria-hidden="true"><use href="#i-print"/></svg>Print / save as PDF</button></div>
+        <p id="action-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div id="copy-fallback" hidden><label for="profile-url">Public profile URL</label><input id="profile-url" value="https://www.linkedin.com/in/amoloudi/" readonly spellcheck="false"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-inner"><div><p class="footer-name">Amirhossein Moloudi.</p><p class="footer-note">Amir Hossein Moloudi · <span lang="fa" dir="rtl">امیرحسین مولودی</span> · Mashhad, Iran</p></div><a class="top-link" href="#top">Back to top<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+    <div class="source-links"><span style="align-self:center">Profile details as of 17 October 2026</span><a href="https://www.linkedin.com/in/amoloudi/" target="_blank" rel="noopener noreferrer">Professional profile</a><a href="https://github.com/AmirHosseinMoloudi" target="_blank" rel="noopener noreferrer">Public code profile</a><span style="align-self:center">No analytics. No tracking cookies.</span></div>
+  </div>
+</footer>
+<script>
+(() => {
+  'use strict';
+  const root = document.documentElement;
+  const nav = document.getElementById('site-nav');
+  const menu = document.getElementById('menu-toggle');
+  const theme = document.getElementById('theme-toggle');
+  const copy = document.getElementById('copy-profile');
+  const print = document.getElementById('print-profile');
+  const status = document.getElementById('action-status');
+  const fallback = document.getElementById('copy-fallback');
+  const profileUrl = document.getElementById('profile-url');
+  const desktop = window.matchMedia('(min-width: 960px)');
+
+  root.classList.add('js');
+  [menu, theme, copy, print].forEach(control => { control.hidden = false; });
+
+  function closeMenu(returnFocus = false) {
+    nav.classList.remove('is-open');
+    menu.setAttribute('aria-expanded', 'false');
+    menu.setAttribute('aria-label', 'Open navigation');
+    if (returnFocus && !desktop.matches) menu.focus();
+  }
+
+  menu.addEventListener('click', () => {
+    const open = menu.getAttribute('aria-expanded') !== 'true';
+    menu.setAttribute('aria-expanded', String(open));
+    menu.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    nav.classList.toggle('is-open', open);
+  });
+  nav.addEventListener('click', event => {
+    if (event.target.closest('a')) closeMenu();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') closeMenu(true);
+  });
+  document.addEventListener('click', event => {
+    if (!event.target.closest('.header-inner') && menu.getAttribute('aria-expanded') === 'true') closeMenu();
+  });
+  desktop.addEventListener('change', () => closeMenu());
+
+  theme.addEventListener('click', () => {
+    const dark = root.dataset.theme !== 'dark';
+    root.dataset.theme = dark ? 'dark' : 'light';
+    theme.setAttribute('aria-pressed', String(dark));
+    const label = dark ? 'Switch to light appearance' : 'Switch to dark appearance';
+    theme.setAttribute('aria-label', label);
+    theme.title = label;
+    document.querySelector('meta[name="theme-color"]').content = dark ? '#142720' : '#f5f3ed';
+  });
+
+  copy.addEventListener('click', async () => {
+    try {
+      if (!window.isSecureContext || !navigator.clipboard?.writeText) {
+        throw new Error('Clipboard unavailable');
+      }
+      await navigator.clipboard.writeText(profileUrl.value);
+      fallback.hidden = true;
+      status.textContent = 'Profile link copied.';
+    } catch {
+      fallback.hidden = false;
+      profileUrl.focus();
+      profileUrl.select();
+      status.textContent = 'Automatic copying is unavailable. The profile URL is selected below; copy it manually.';
+    }
+  });
+
+  // Restore disclosure states after the browser print dialog closes.
+  let printStates = null;
+  window.addEventListener('beforeprint', () => {
+    if (printStates) return;
+    printStates = Array.from(document.querySelectorAll('details'), item => [item, item.open]);
+    printStates.forEach(([item]) => { item.open = true; });
+  });
+  window.addEventListener('afterprint', () => {
+    if (!printStates) return;
+    printStates.forEach(([item, open]) => { item.open = open; });
+    printStates = null;
+  });
+  print.addEventListener('click', () => window.print());
+})();
+</script>
 </body>
 </html>
